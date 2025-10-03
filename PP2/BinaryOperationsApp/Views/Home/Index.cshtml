@@ -1,0 +1,43 @@
+
+@model BinaryOperationsApp.Models.BinaryModel
+
+@{
+    ViewData["Title"] = "Operaciones Binarias";
+}
+
+<h2>Operaciones Binarias</h2>
+
+<form asp-action="Index" method="post">
+    <div>
+        <label asp-for="A">a:</label>
+        <input asp-for="A" class="form-control" />
+        <span asp-validation-for="A" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="B">b:</label>
+        <input asp-for="B" class="form-control" />
+        <span asp-validation-for="B" class="text-danger"></span>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Calcular</button>
+    </div>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <p>Por favor corrija los errores antes de continuar.</p>
+    </div>
+}
+
+@if (Model.ResultTableHtml != null)
+{
+    <h3>Resultados</h3>
+    @Html.Raw(Model.ResultTableHtml)
+}
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+}
