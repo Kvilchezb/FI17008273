@@ -37,7 +37,7 @@ dotnet run
 **IA:** Ese error ocurre cuando se declara una clase en medio de instrucciones de nivel superior. Mueve la clase 'Result' al final del archivo 'Program.cs', después de 'app.Run();'.
 
 **Usuario:** Como puedo realizar el comando IResult ToXml(Result result), un poco mas eficiente?
-**IA:**var xmlSerializer = new XmlSerializer(typeof(Result), new XmlRootAttribute("Result"));
+**IA:** var xmlSerializer = new XmlSerializer(typeof(Result), new XmlRootAttribute("Result"));
     using var stringWriter = new StringWriter();
     xmlSerializer.Serialize(stringWriter, result);
     return Results.Content(stringWriter.ToString(), "application/xml");
@@ -57,6 +57,7 @@ dotnet run
 
 **Usuario:** Me dio un error de String en la parte "app.MapPut("/replace/{length}", (int length, HttpRequest request) =>" que me recomiendas en codigo?
 **IA:** Te recomiendo aplicar lo siguiente:
+
 string? value = request.Query["value"];
     string? text = request.Form["text"];
     bool xml = request.Headers.TryGetValue("xml", out var xmlHeader) && xmlHeader == "true";
@@ -73,12 +74,15 @@ string? value = request.Query["value"];
     return xml ? ToXml(result) : Results.Json(result);
 
 **Usuario:** Puedo agregar "public class Result" al final del codigo en Program.cs? 
+
 **IA:** Si, solo agrega este código correctamente :
+
 public class Result
 {
     public string Ori { get; set; } = string.Empty;
     public string New { get; set; } = string.Empty;
 }
+
 ---
 
 **TESTEO EN POST-MAN**
