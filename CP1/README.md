@@ -272,6 +272,5 @@ El código fuente debe incluir, en forma de comentarios, de dónde obtuvo la res
 ...
 // Gemini
 ...
-//IA utilizada "Copilot"
 ```
 

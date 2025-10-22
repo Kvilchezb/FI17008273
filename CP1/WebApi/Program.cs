@@ -85,3 +85,5 @@ app.MapPatch("/", () =>
 });
 
 app.Run();
+
+//IA utilizada "Copilot"
