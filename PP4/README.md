@@ -279,11 +279,13 @@ MongoDB usa documentos que cambian fácil. No hay un plan estricto. No hay pasos
 El método Database First tampoco ayuda mucho. Este plan necesita un esquema ya puesto. Así puede hacer las clases solas. En NoSQL, ese plan no existe. Esto detiene el hacer modelos de forma libre. 
 
 Además, las claves externas son un problema grande. NoSQL no usa esos lazos viejos de bases relacionales. En su lugar, se usan números de identificación o se meten documentos dentro de otros. Esto deja sin sentido la regla de las claves externas.
+
 **¿Cuál carácter, además de la coma (,) y el Tab (\t), se podría usar para separar valores en un archivo de texto con el objetivo de ser interpretado como una tabla (matriz)? ¿Qué extensión le pondría y por qué? Por ejemplo: Pipe (|) con extensión .pipe.**
 
 Un buen indicio para separar datos, además de la coma y el espacio, es la línea vertical (|). Este signo casi nunca aparece en los datos. Es fácil de ver y no choca con otros separadores. Para nombrar este tipo de archivo, se puede usar la extensión . pipe. Esto muestra bien cuál es el separador. Así no hay lío con ficheros . csv o . tsv.
 Ejemplo:
 Autor|Título|Tema
 "Acuña, Manuel"|Selección de versos|Letras de habla hispana
+
 ---
 
