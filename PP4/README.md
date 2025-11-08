@@ -272,7 +272,7 @@ class Program
 ## ❓ Preguntas teóricas
 
 **¿Cómo cree que resultaría el uso de la estrategia de Code First para crear y actualizar una base de datos de tipo NoSQL (como por ejemplo MongoDB)? ¿Y con Database First? ¿Cree que habría complicaciones con las Foreign Keys?**
-- Si se usa el método Code First con una base de datos NoSQL, como MongoDB, el trabajo se hace difícil. Esto pasa porque el método se hizo para bases de datos con tablas. Esos sistemas tienen claves y un plan fijo. 
+Si se usa el método Code First con una base de datos NoSQL, como MongoDB, el trabajo se hace difícil. Esto pasa porque el método se hizo para bases de datos con tablas. Esos sistemas tienen claves y un plan fijo. 
 
 MongoDB usa documentos que cambian fácil. No hay un plan estricto. No hay pasos automáticos. Para hacer algo parecido, hacen falta libros de código para NoSQL. Se debe cambiar mucha lógica a mano. 
 
@@ -280,7 +280,8 @@ El método Database First tampoco ayuda mucho. Este plan necesita un esquema ya 
 
 Además, las claves externas son un problema grande. NoSQL no usa esos lazos viejos de bases relacionales. En su lugar, se usan números de identificación o se meten documentos dentro de otros. Esto deja sin sentido la regla de las claves externas.
 **¿Cuál carácter, además de la coma (,) y el Tab (\t), se podría usar para separar valores en un archivo de texto con el objetivo de ser interpretado como una tabla (matriz)? ¿Qué extensión le pondría y por qué? Por ejemplo: Pipe (|) con extensión .pipe.**
-- Un buen indicio para separar datos, además de la coma y el espacio, es la línea vertical (|). Este signo casi nunca aparece en los datos. Es fácil de ver y no choca con otros separadores. Para nombrar este tipo de archivo, se puede usar la extensión . pipe. Esto muestra bien cuál es el separador. Así no hay lío con ficheros . csv o . tsv.
+
+Un buen indicio para separar datos, además de la coma y el espacio, es la línea vertical (|). Este signo casi nunca aparece en los datos. Es fácil de ver y no choca con otros separadores. Para nombrar este tipo de archivo, se puede usar la extensión . pipe. Esto muestra bien cuál es el separador. Así no hay lío con ficheros . csv o . tsv.
 Ejemplo:
 Autor|Título|Tema
 "Acuña, Manuel"|Selección de versos|Letras de habla hispana
