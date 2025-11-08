@@ -6,15 +6,6 @@
 
 ---
 
-## 🧠 Descripción
-Esta práctica consiste en desarrollar una aplicación de consola en C# utilizando .NET 8.0 y Entity Framework Core 9.0. La aplicación debe:
-
-1. Crear una base de datos relacional SQLite usando Code First.
-2. Leer datos desde un archivo CSV (`books.csv`).
-3. Generar archivos TSV por autor con la información organizada.
-
----
-
 ## ⚙️ Comandos utilizados
 ```bash
 mkdir PP4
