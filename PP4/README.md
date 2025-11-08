@@ -278,7 +278,7 @@ class Program
 
 **¿Cómo cree que resultaría el uso de la estrategia de Code First para crear y actualizar una base de datos de tipo NoSQL (como por ejemplo MongoDB)? ¿Y con Database First? ¿Cree que habría complicaciones con las Foreign Keys?**
 
-Si se usa el método Code First con una base de datos NoSQL, como MongoDB, el trabajo se hace difícil. Esto pasa porque el método se hizo para bases de datos con tablas. Esos sistemas tienen claves y un plan fijo. 
+Si se usa el método Code First con una base de datos NoSQL, como MongoDB, el trabajo se hace difícil. Esto pasa porque el método se hizo para bases de datos con tablas. Esos sistemas tienen claves y un esquema fijo. 
 
 MongoDB usa documentos que cambian fácil. No hay un plan estricto. No hay pasos automáticos. Para hacer algo parecido, hacen falta libros de código para NoSQL. Se debe cambiar mucha lógica a mano. 
 
