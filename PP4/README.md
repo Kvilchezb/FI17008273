@@ -291,9 +291,7 @@ Además, las claves externas son un problema grande. NoSQL no usa esos lazos vie
 Un buen indicio para separar datos, además de la coma y el espacio, es la línea vertical (|). Este signo casi nunca aparece en los datos. Es fácil de ver y no choca con otros separadores. Para nombrar este tipo de archivo, se puede usar la extensión . pipe. Esto muestra bien cuál es el separador. Así no hay lío con ficheros . csv o . tsv.
 
 Ejemplo:
-Autor|Título|Tema
-
-"Acuña, Manuel"|Selección de versos|Letras de habla hispana
+Autor|Título|Tema"Acuña, Manuel"|Selección de versos|Letras de habla hispana
 
 ---
 
